@@ -1,27 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Account</title>
+{% extends 'base.html' %}
+{% block head %}
+	
+<!--links-->
+<title>New Account</title>
+<link rel="stylesheet" href="{{ url_for ('static', filename='css/login.css') }}">
 
-    <!--links-->
-    <link rel="stylesheet" href="{{ url_for ('static', filename='css/login.css') }}">
-</head>
-<body>
-    <!--newacc-->
-    <div class="container">
-        <div class="newacc">
-            <a href="/" class="logo">Logo</a>
-            <form action="#" class="box">
-                <h1>Create an Account</h1>
-                <input type="text" name="username" placeholder="Username">
-                <input type="password" name="password" placeholder="Password">
-                <input type="submit" value="Create">
-                <a href="/login">Already Have an Account? Log In</a>
-            </form>
-        </div>
-    </div>
-</body>
-</html>
+{% endblock head %}
+{% block body %}
+	
+<!--newacc-->
+<div class="container">
+	<div class="newacc">
+		<form action="#" class="box" method="POST">
+			<h1>Create an Account</h1>
+			<input type="text" name="username" placeholder="Username">
+			<input type="password" name="password" placeholder="Password">
+			<input type="password" name="confirm_password" placeholder="Confirm Password">
+			<input type="submit" value="Create">
+			<a href="/login">Already Have an Account? Log In</a>
+		</form>
+	</div>
+</div>
+{% endblock body %}
