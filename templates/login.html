@@ -7,19 +7,19 @@
     <title>Log In</title>
 
     <!--links-->
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 </head>
 <body>
     <!--login-->
     <div class="container">
         <div class="login">
-            <a href="index.html" class="logo">Logo</a>
+            <a href="/" class="logo">Logo</a>
             <form action="login.html" class="box">
                 <h1>Log In</h1>
                 <input type="email" name="" placeholder="Email">
                 <input type="password" name="" placeholder="Password">
                 <input type="submit" name="" value="Log In">
-                <a href="#">Don't Have an Account?</a>
+                <a href="/register">Don't Have an Account?</a>
             </form>
         </div>
     </div>
