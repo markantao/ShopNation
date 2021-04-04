@@ -87,7 +87,10 @@ def main():
 	return render_template("main.html")
 @app.route("/cupcakes")
 def cupcakes():
-	return render_template("description.html")
+	return render_template("cupcakes.html")
+@app.route("/google")
+def google():
+	return render_template("google.html")
 
 
 # ends here

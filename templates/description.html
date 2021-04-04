@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block head %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/description.css') }}">
+{% endblock head %}
+
+{% block body %}
+<div class="container">
+	<h1 class="title-caption">Jamie's Cupcake Land</h1>
+	<div class="square">
+		<p>Jamie's Cupcake Land Sell's Delicious Cupcakes!</p>
+		<li>Chocolate Cupcake</li>
+		<li>Strawberry Cupcake</li>
+		<li>Vanilla Cupcake</li>
+		<li>Pamelo Cupcake</li>
+		<li>Air Cupcake</li>
+	</div>
+	<p class="link"><a href="http://www.thecupcakeshoppe.ca/">Visit Jamie's Cupcake Shop!</a></p>
+	</div>
+{% endblock body %}
