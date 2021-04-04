@@ -7,7 +7,7 @@
     <title>Shopnation</title>
 
     <!--links-->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
     <!--head-->
@@ -21,7 +21,7 @@
         <button class="button log">Log In</button>
     </header>
     <!--script-->
-    <script src="main.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <!--home-->
     <div class="container">
         <div class="home">
@@ -35,10 +35,10 @@
     <div class="container">
         <div class="mission" id="mission">
             <h1>Our Mission</h1>
-            <img src="IMG_2481.JPG" class="imgmis img1">
+            <img src="{{ url_for('static', filename='img/31upv631160.png') }}" class="imgmis img1">
             <p class="p1">Our Mission is to create an interconnected community to connect 
                 one another and bring each other close to home when we are all away</p>
-            <img src="IMG_2499.JPG" class="imgmis img2">
+            <img src="{{ url_for('static', filename='img/oNlMfgwLbWI.png') }}" class="imgmis img2">
             <p class="p2">By using ShopNation you are giving hope and a light to countless 
                 amounts of small business’ around the world</p>
         </div>
@@ -60,19 +60,19 @@
             <h1>Meet the Developers</h1>
             <div class="row">
                 <div class="column">
-                    <a href=""><img src="ldh.jpg" class="devimg"></a>
+                    <a href=""><img src="{{ url_for('static', filename='img/Mark-Portrait(NotFormal) 1.png') }}" class="devimg"></a>
                     <p>role</p>
                 </div>
                 <div class="column">
-                    <a href=""><img src="sjk.jpg" class="devimg"></a>
+                    <a href=""><img src="{{ url_for('static', filename='img/account.png') }}" class="devimg"></a>
                     <p>role</p>
                 </div>
                 <div class="column">
-                    <a href=""><img src="hiy.jpg" class="devimg"></a>
+                    <a href=""><img src="{{ url_for('static', filename='img/account.png') }}" class="devimg"></a>
                     <p>role</p>
                 </div>
                 <div class="column">
-                    <a href=""><img src="sk.jpg" class="devimg"></a>
+                    <a href=""><img src="{{ url_for('static', filename='img/keroleiveri.jpg') }}" class="devimg"></a>
                     <p>role</p>
                 </div>
             </div>
