@@ -48,10 +48,6 @@ header ul {
   align-items: center;
 }
 
-.title-caption {
-  right: 100%;
-}
-
 header ul li {
   position: relative;
   list-style: none;
@@ -202,10 +198,21 @@ header .sticky ul li a {
 }
 .container .help h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 100px;
   color: #003459;
   padding-top: 150px;
   padding-bottom: 50px;
+  padding-left: 150px;
+}
+
+.container .help p {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #003459;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  padding-left: 150px;
 }
 /*devs*/
 .container .devs {
@@ -214,9 +221,10 @@ header .sticky ul li a {
 }
 .container .devs h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 100px;
   color: #003459;
-  padding-top: 150px;
+  padding-top: 300px;
+  padding-left: 150px;
 }
 .row {
   padding: 100px;
@@ -228,4 +236,5 @@ header .sticky ul li a {
 }
 .column img {
   height: 300px;
+  border-radius: 25px;
 }
