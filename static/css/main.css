@@ -107,7 +107,8 @@ header .sticky ul li a {
   border-radius: 50px;
   cursor: pointer;
   align-items: center;
-  bottom: 200px;
+  bottom: 30px;
+  padding-left: 150px;
 }
 .scroll-down::before,
 .scroll-down::after {
