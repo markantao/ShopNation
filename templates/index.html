@@ -1,5 +1,5 @@
-{% extends 'base.html' %} {% block title %}Index{% endblock title %} {% block
-head %}
+{% extends 'base.html' %} {% block title %}Shopnation{% endblock title %} {%
+block head %}
 <!--links-->
 <link
   rel="stylesheet"
@@ -12,7 +12,7 @@ head %}
 <!--home-->
 <div class="container">
   <div class="home">
-    <h1>Support Your Community Today!</h1>
+    <h1 class="title-caption">Support Your Community Today!</h1>
     <a href="#mission">
       <div class="scroll-down"></div>
     </a>
@@ -21,21 +21,23 @@ head %}
 <!--mission-->
 <div class="container">
   <div class="mission" id="mission">
-    <h1>Our Mission</h1>
+    <h1 class="mission-title">Our Mission</h1>
     <img
       src="{{ url_for('static', filename='img/31upv631160.png') }}"
       class="imgmis img1"
     />
     <p class="p1">
-      Our Mission is to create an interconnected community to connect<br />
-      one another and bring each other close to home when we are all away
+      Our Mission is to create an <br />interconnected community to connect<br />
+      one another and bring each other <br />close to home when we are all away
     </p>
     <img
       src="{{ url_for('static', filename='img/oNlMfgwLbWI.png') }}"
       class="imgmis img2"
     />
     <p class="p2">
-      By using ShopNation you are giving hope and a light to countless amounts
+      By using ShopNation you are<br />
+      giving hope and a light<br />
+      to countless amounts<br />
       of small business’ around the world
     </p>
   </div>

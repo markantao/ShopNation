@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-	<title>{% block title%}{% endblock title %}</title>
-	{% for category, message in get_flashed_messages(with_categories = true) %}
-		<div class="{{ category }} flex items-center justify-between">
-			<span>{{ message }}</span>
-			<button onclick="this.parentElement.remove()">cancel</button>
-	  	</div>
-		  {% endfor %}
-		  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-		  {% if "isLogged" not in session %}
-		  <header>
-			
-			<a href="/" class="logo">Logo</a>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#features">Features</a></li>
-				<li><a href="#faqs">FAQs</a></li>
-			</ul>
-			<a href="/login" class="button log">Log In</a>
-			<a href="/register" class="button log">Register</a>
-		</header>
-		{% else %}
-			<header>
-				<a href="#" class="logo">Logo</a>
-				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#features">Features</a></li>
-					<li><a href="#faqs">FAQs</a></li>
-				</ul>
-				<a href="/logout" class="button log">Logout</a>
-			</header>
-		{% endif %}
-	{% block head %}{% endblock head %}
-</head>
-<body>
-	{% block body %}{% endblock body %}
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>{% block title%}{% endblock title %}</title>
+    {% for category, message in get_flashed_messages(with_categories = true) %}
+    <div class="{{ category }} flex items-center justify-between">
+      <span>{{ message }}</span>
+      <button onclick="this.parentElement.remove()">cancel</button>
+    </div>
+    {% endfor %}
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+    {% if "isLogged" not in session %}
+    <header>
+      <a href="/" class="logo">Shopnation</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+      </ul>
+      <a href="/login" class="button log">Log In</a>
+      <a href="/register" class="button log">Register</a>
+    </header>
+    {% else %}
+    <header>
+      <a href="#" class="logo">Logo</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+      </ul>
+      <a href="/logout" class="button log">Logout</a>
+    </header>
+    {% endif %} {% block head %}{% endblock head %}
+  </head>
+  <body>
+    {% block body %}{% endblock body %}
+  </body>
 </html>
