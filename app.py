@@ -41,7 +41,7 @@ def register():
 		session["is_Logged"] = True
 		session["username"] = username
 		flash("Registered successfully!", success)
-		return redirect("/")
+		return redirect("/home")
 	else:
 		logged = isLogged()
 		if logged == True:
@@ -63,7 +63,7 @@ def login():
 			session["isLogged"] = True
 			session["username"] = username
 			flash("Successfully logged in!", success)
-			return redirect("/")
+			return redirect("/home")
 		else:
 			flash("Username or password are incorrect!", alert_error)
 			return redirect("/login")
@@ -81,6 +81,13 @@ def logout():
 		flash("You are not logged in!", warning_error)
 		return redirect("/login")
 
+# main page
+@app.route("/home")
+def main():
+	return render_template("main.html")
+
+
+# ends here
 
 # Run the app
 if __name__ == '__main__':
