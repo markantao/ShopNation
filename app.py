@@ -85,6 +85,9 @@ def logout():
 @app.route("/home")
 def main():
 	return render_template("main.html")
+@app.route("/cupcakes")
+def cupcakes():
+	return render_template("description.html")
 
 
 # ends here

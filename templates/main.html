@@ -1,12 +1,35 @@
-{% extends 'base.html' %} {% block title %}Shopnation{% endblock title %} {%
-block head %}
+{% extends 'base.html' %} 
+{% block title %}Shopnation{% endblock title %} 
+
+{%block head %}
 
 <link
   rel="stylesheet"
   href="{{ url_for('static', filename='css/home.css') }}"
 />
-{% endblock head %} {% block body %}
+{% endblock head %} 
+
+{% block body %}
 
 <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
-{% endblock body%}
+    <h1 class="title-caption">Business' Showcase</h1>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/cupcake.jpg') }}" alt="Google Logo" style="width: 70%;">
+      <div class="container">
+        <h4><b>Jamie's Cupcake Land</b></h4> 
+        <p>By: Jamie</p> 
+      </div>
+    </div>
+
+    <div class="card2">
+      <img src="{{ url_for('static', filename='img/google.png') }}" alt="Google Logo" style="width: 70%;">
+      <div class="container">
+        <h4><b>Totally Not Google</b></h4> 
+        <p>By: Not Google</p> 
+      </div>
+    </div>
+
+
+{% endblock body %}
