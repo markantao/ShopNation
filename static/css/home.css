@@ -19,7 +19,7 @@ body {
   text-align: center;
   padding-left: 140px;
   padding-top: 110px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 80px;
   color: #003459;
 }
@@ -38,7 +38,7 @@ body {
   color: #ffffff;
 }
 
-.card h4 p{
+.card h4 p {
   text-align: center;
 }
 
@@ -64,7 +64,7 @@ body {
   color: #ffffff;
 }
 
-.card2 h4 p{
+.card2 h4 p {
   text-align: center;
 }
 
