@@ -1,68 +1,96 @@
-{% extends 'base.html' %}
-{% block title %}Index{% endblock title %}
-{% block head %}
+{% extends 'base.html' %} {% block title %}Index{% endblock title %} {% block
+head %}
 <!--links-->
-<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-{% endblock head %}
-	
-{% block body %}
-	
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/main.css') }}"
+/>
+{% endblock head %} {% block body %}
+
 <!--head-->
 <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 <!--home-->
 <div class="container">
-	<div class="home">
-		<h1>Support Your Community Today!</h1>
-		<a href="#mission">
-			<div class="scroll-down"></div>
-		</a>
-        </div>
+  <div class="home">
+    <h1>Support Your Community Today!</h1>
+    <a href="#mission">
+      <div class="scroll-down"></div>
+    </a>
+  </div>
+</div>
+<!--mission-->
+<div class="container">
+  <div class="mission" id="mission">
+    <h1>Our Mission</h1>
+    <img
+      src="{{ url_for('static', filename='img/31upv631160.png') }}"
+      class="imgmis img1"
+    />
+    <p class="p1">
+      Our Mission is to create an interconnected community to connect<br />
+      one another and bring each other close to home when we are all away
+    </p>
+    <img
+      src="{{ url_for('static', filename='img/oNlMfgwLbWI.png') }}"
+      class="imgmis img2"
+    />
+    <p class="p2">
+      By using ShopNation you are giving hope and a light to countless amounts
+      of small business’ around the world
+    </p>
+  </div>
+</div>
+<!--help-->
+<div class="container">
+  <div class="help">
+    <h1>How Can You Help?</h1>
+    <p>
+      To start impacting and helping your community, you can create an account
+      with ShopNation and start donating to your favourite business in different
+      categories. By just clicking a button, you are giving hope and shedding
+      light to small business owners from across the globe. Create an account
+      and start now!
+    </p>
+  </div>
+</div>
+<!--devs-->
+<div class="container">
+  <div class="devs">
+    <h1>Meet the Developers</h1>
+    <div class="row">
+      <div class="column">
+        <a href=""
+          ><img
+            src="{{ url_for('static', filename='img/Mark-Portrait(NotFormal) 1.png') }}"
+            class="devimg"
+        /></a>
+        <p>role</p>
+      </div>
+      <div class="column">
+        <a href=""
+          ><img
+            src="{{ url_for('static', filename='img/account.png') }}"
+            class="devimg"
+        /></a>
+        <p>role</p>
+      </div>
+      <div class="column">
+        <a href=""
+          ><img
+            src="{{ url_for('static', filename='img/account.png') }}"
+            class="devimg"
+        /></a>
+        <p>role</p>
+      </div>
+      <div class="column">
+        <a href=""
+          ><img
+            src="{{ url_for('static', filename='img/keroleiveri.jpg') }}"
+            class="devimg"
+        /></a>
+        <p>role</p>
+      </div>
     </div>
-    <!--mission-->
-    <div class="container">
-		<div class="mission" id="mission">
-			<h1>Our Mission</h1>
-            <img src="{{ url_for('static', filename='img/31upv631160.png') }}" class="imgmis img1">
-            <p class="p1">Our Mission is to create an interconnected community to connect 
-				one another and bring each other close to home when we are all away</p>
-				<img src="{{ url_for('static', filename='img/oNlMfgwLbWI.png') }}" class="imgmis img2">
-				<p class="p2">By using ShopNation you are giving hope and a light to countless 
-					amounts of small business’ around the world</p>
-				</div>
-			</div>
-			<!--help-->
-			<div class="container">
-				<div class="help">
-					<h1>How Can You Help?</h1>
-					<p>To start impacting and helping your community, you can create an
-						account with ShopNation and start donating to your favourite 
-						business in different categories. By just clicking a button, you are 
-						giving hope and shedding light to small business owners
-						from across the globe. Create an account and start now!</p>
-        </div>
-    </div>
-    <!--devs-->
-    <div class="container">
-		<div class="devs">
-			<h1>Meet the Developers</h1>
-            <div class="row">
-				<div class="column">
-					<a href=""><img src="{{ url_for('static', filename='img/Mark-Portrait(NotFormal) 1.png') }}" class="devimg"></a>
-                    <p>role</p>
-                </div>
-                <div class="column">
-					<a href=""><img src="{{ url_for('static', filename='img/account.png') }}" class="devimg"></a>
-                    <p>role</p>
-                </div>
-                <div class="column">
-					<a href=""><img src="{{ url_for('static', filename='img/account.png') }}" class="devimg"></a>
-                    <p>role</p>
-                </div>
-                <div class="column">
-					<a href=""><img src="{{ url_for('static', filename='img/keroleiveri.jpg') }}" class="devimg"></a>
-                    <p>role</p>
-                </div>
-            </div>
-        </div>
-    </div> 
+  </div>
+</div>
 {% endblock body %}

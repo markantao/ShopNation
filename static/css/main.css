@@ -1,206 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: auto;
-    height: auto;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  font-family: "Open Sans", sans-serif;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
-    background-color: #EBF3FF;
+  background-color: #ebf3ff;
 }
 /*header*/
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    padding: 40px 100px;
-    z-index: 1000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 1000000;
 }
 header .sticky {
-    padding: 5px 100px;
-    background-color: #003459;
+  padding: 5px 100px;
+  background-color: #003459;
 }
 header .logo {
-    position: relative;
-    font-weight: 700;
-    color: #003459;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
+  position: relative;
+  font-weight: 700;
+  color: #003459;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
 }
 header ul {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header ul li {
-    position: relative;
-    list-style: none;
+  position: relative;
+  list-style: none;
 }
 header ul li a {
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #003459;
-    letter-spacing: 2px;
-    font-weight: 500px;
-    transition: 0.6s;
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #003459;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
 }
 header .sticky .logo,
 header .sticky ul li a {
-    color: #EBF3FF;
+  color: #ebf3ff;
 }
 .button {
-    border-radius: 12px;
-    padding: 10px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
+  border-radius: 12px;
+  padding: 10px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 .log {
-    background-color: #EBF3FF;
-    color: #003459;
-    border: 2px solid #003459;
+  background-color: #ebf3ff;
+  color: #003459;
+  border: 2px solid #003459;
 }
 .log:hover {
-    background-color: #003459;
-    color: #EBF3FF;
+  background-color: #003459;
+  color: #ebf3ff;
 }
 .container .home {
-    position: relative;
-    width: 100%;
-    height: 600px;
+  position: relative;
+  width: 100%;
+  height: 600px;
 }
 /*home*/
 .container .home h1 {
-    text-align: center;
-    font-size: 50px;
-    color: #003459;
-    padding: 200px;
+  text-align: center;
+  font-size: 50px;
+  color: #003459;
+  padding: 200px;
 }
 .scroll-down {
-    height: 50px;
-    width: 30px;
-    border: 2px solid #003459;
-    position: absolute;
-    left: 50%;
-    border-radius: 50px;
-    cursor: pointer;
-    align-items: center;
-    bottom: 200px;
+  height: 50px;
+  width: 30px;
+  border: 2px solid #003459;
+  position: absolute;
+  left: 50%;
+  border-radius: 50px;
+  cursor: pointer;
+  align-items: center;
+  bottom: 200px;
 }
 .scroll-down::before,
 .scroll-down::after {
-    content: "";
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    height: 10px;
-    width: 10px;
-    transform: translate(-50%, -100%) rotate(45deg);
-    border: 2px solid #003459;
-    border-top: transparent;
-    border-left: transparent;
-    animation: scroll-down 1s ease-in-out infinite;
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid #003459;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
 }
 .scroll-down::before {
-    top: 30%;
-    animation-delay: 0.3s;
-    /* animation: scroll-down 1s ease-in-out infinite; */
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
 }
 @keyframes scroll-down {
-    0% {
-      /* top:20%; */
-      opacity: 0;
-    }
-    30% {
-      opacity: 1;
-    }
-    60% {
-      opacity: 1;
-    }
-    100% {
-      top: 90%;
-      opacity: 0;
-    }
+  0% {
+    /* top:20%; */
+    opacity: 0;
   }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
 /*mission*/
 .container .mission {
-    height: 1000px;
+  height: 1000px;
+  text-align: center;
 }
 .container .mission h1 {
-    text-align: center;
-    font-size: 50px;
-    color: #003459;
-    padding-top: 150px;
-    padding-bottom: 50px;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+  color: #003459;
+  padding-top: 150px;
+  padding-bottom: 50px;
 }
 .imgmis {
-    width: auto;
-    height: 200px;
-    border-radius: 20px;
+  width: auto;
+  height: 200px;
+  border-radius: 20px;
 }
 .img1 {
-    padding-left: 100px;
+  padding-left: 100px;
 }
 .img2 {
-    padding-left: 880px;
+  padding-left: 880px;
 }
 .p1 {
-    text-align: right;
+  font-family: "Montserrat Alternates", sans-serif;
+  text-align: right;
+  font-weight: bold;
 }
 .p2 {
-    text-align: left;
+  text-align: left;
 }
 /*help*/
 .container .help {
-    height: 600px;
-    padding: 100px;
-    color: #003459;
+  height: 600px;
+  padding: 100px;
+  color: #003459;
 }
 .container .help h1 {
-    text-align: center;
-    font-size: 50px;
-    color: #003459;
-    padding-top: 150px;
-    padding-bottom: 50px;
+  text-align: center;
+  font-size: 50px;
+  color: #003459;
+  padding-top: 150px;
+  padding-bottom: 50px;
 }
 /*devs*/
 .container .devs {
-    height: 600px;
-    color: #003459;
+  height: 600px;
+  color: #003459;
 }
 .container .devs h1 {
-    text-align: center;
-    font-size: 50px;
-    color: #003459;
-    padding-top: 150px;
+  text-align: center;
+  font-size: 50px;
+  color: #003459;
+  padding-top: 150px;
 }
 .row {
-    padding: 100px;
+  padding: 100px;
 }
 .column {
-    float: left;
-    width: 25%;
-    padding: 3px;
+  float: left;
+  width: 25%;
+  padding: 3px;
 }
 .column img {
-    height: 300px;
+  height: 300px;
 }
